@@ -54,7 +54,7 @@ void MainWindow::loadModel()
 
         // 尝试加载模型文件
         try {
-            net = cv::dnn::readNet("E:/qt/yolov8n.onnx");
+            net = cv::dnn::readNet("E:/qt/yolo11n.onnx");
             qDebug() << "模型文件加载完成";
         }
         catch (const cv::Exception& e) {
